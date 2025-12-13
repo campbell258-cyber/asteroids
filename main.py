@@ -55,7 +55,7 @@ def main():
             for asteroid in list(asteroids):
                 if shot.collides_with(asteroid):
                     log_event("asteroid_shot")
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
                     break  # this shot is gone; no need to check more asteroids
 
